@@ -1079,6 +1079,22 @@ body {
     color: orange;
 }
 
+@media (max-width: 1024px) {
+    .skills-grid {
+        max-width: 700px;
+    }
+  
+    .skill img {
+      width: 40px; /* Even smaller icon size for very small screens */
+      height: auto;
+    }
+  
+    .skill p {
+      font-size: 12px; 
+    }
+  
+}
+
 
 @media screen and (max-width: 520px) {
     .screen-body {
