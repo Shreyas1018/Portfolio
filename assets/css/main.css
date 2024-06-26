@@ -38,11 +38,11 @@ html {
 
 body {
     margin: 0;
-    background-image: url("../img/daniil-silantev-BJi5fTavL4E-unsplash.jpg");
+    background-image: url("../img/Dotted_background.svg");
     background-position: center;
     background-size: cover;
     -webkit-tap-highlight-color: #FFF498;
-    background-color: #57648C;
+    background-color: #131516;
     font-size: 14px;
     line-height: 1.6;
     font-family: "Montserrat", sans-serif;
@@ -916,7 +916,6 @@ body {
     justify-content: center;
     padding: 0;
     border: none;
-    /* Optional: Remove the default border */
 }
 
 .logo-button:hover {
@@ -931,28 +930,16 @@ body {
 
 .screen {
     position: relative;
-    background: #3e3e3e;
+    background: #202020;
     border-radius: 15px;
 }
 
-.screen:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-    z-index: -1;
-}
 
 .screen-header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background: #4d4d4f;
+    background: #4d4d4d;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -1029,7 +1016,7 @@ body {
 
 .app-contact {
     margin-top: auto;
-    font-size: 9px;
+    font-size: 10px;
     color: #ffffff;
 }
 
@@ -1059,7 +1046,7 @@ body {
 }
 
 .app-form-control::placeholder {
-    color: #666;
+    color: #9b9595;
 }
 
 .app-form-control:focus {
@@ -1070,7 +1057,7 @@ body {
     background: none;
     border: none;
     color: brown;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     outline: none;
 }
@@ -1157,7 +1144,7 @@ body {
     }
   
     .skill img {
-      width: 60px; /* Even smaller icon size for very small screens */
+      width: 60px;
       height: auto;
     }
   
@@ -1203,7 +1190,7 @@ body {
 .skill p {
     margin: 0;
     font-size: 18px;
-    color: #e0e0e0;
+    color: #ffffff;
 }
 
 .hover-text {
