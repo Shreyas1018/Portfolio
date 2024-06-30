@@ -551,7 +551,7 @@ body {
 
 .work h2 {
     margin: 0 0 20px 0;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center
 }
 
@@ -616,21 +616,10 @@ body {
 }
 
 .work--lockup .slider--item-right {
-    top: 50%;
-    right: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    display: block
 }
 
-.work--lockup .slider--item-center {
-    position: relative;
-    top: 30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    display: block
-}
 
 .work--lockup .slider--item-center a {
     color: #fff
@@ -1253,3 +1242,362 @@ body {
     transform: rotateX(0deg);
     transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.panel {
+    height: 320px;
+    width: 220px;
+    position: relative;
+  
+    &:hover {
+      .card {
+        filter: blur(7.5px);
+      }
+      .card1 {
+        background-size: 215% 135%;
+      }
+      .card2 {
+        background-size: 115% 115%;
+      }
+      .card3 {
+        background-size: 155% 115%;
+      }
+      .title {
+        display: none;
+      }
+      .border {
+        border: 1px solid rgba(255, 255, 255, 1);
+      }
+      .slide {
+        bottom: 0px;
+      }
+      .ring:before,
+      .ring:after {
+        transform: translateX(-50%) translateY(-50%) rotate(310deg);
+      }
+    }
+  }
+  .ring,
+  .card,
+  .border,
+  .slide,
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.box-container{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.box-button{
+    padding-right: 15px;
+    padding-left: 15px;
+    cursor: pointer;  
+    border: none;
+    background: none
+}
+  
+  .ring {
+    color: #fffbf1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 170px;
+  }
+  
+  .card {
+    background: #f0ead6;
+    position: relative;
+    transition: all 1s;
+    height: 270px;
+    width: 190px;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  .card1 {
+    background-image: url("https://assets.codepen.io/489403/brazil.jpg");
+    background-repeat: no-repeat;
+    background-size: 200% 120%;
+  }
+  
+  .card2 {
+    background-image: url("https://assets.codepen.io/489403/belize.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .card3 {
+    background-image: url("https://assets.codepen.io/489403/egypt.jpg");
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+  }
+  
+  .ring:before,
+  .ring:after {
+    content: "";
+    padding: 0.7em 0.4em;
+    position: absolute;
+    left: 50%;
+    width: 115%;
+    top: 50%;
+    display: block;
+    border: 5px solid #50c9c3;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: translateX(-50%) translateY(-50%) rotate(50deg);
+  }
+  
+  .ring:before {
+    border-color: rgb(235, 235, 235) rgb(235, 235, 235) rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .ring:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(235, 235, 235)
+      rgb(235, 235, 235);
+  }
+  
+  
+  .title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    transition: all 1s;
+    top: 0;
+  }
+  
+  .para {
+    bottom: 0;
+    font-size: 16px;
+    font-family: "Raleway";
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .border {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 260px;
+    width: 180px;
+    transition: border 1s;
+    overflow: hidden;
+  }
+  
+  .slide {
+    height: 260px;
+    width: 180px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: -270px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: bottom 1s;
+    flex-direction: column;
+  }
+  
+  .fa-plane {
+    font-size: 16px;
+  }
+
+  /* Test 2 for image slider cvontainer */
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 50%;
+user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+border-radius: 50%;
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot-container {
+    padding-top: 50px;
+  text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+}
+
+.active, .dot:hover {
+    transform: scale(1.3);
+  background-color: brown;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  to {opacity: 1}
+
+  /* CSS */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot-container {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease, transform 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: brown;
+}
+
+.active {
+  transform: scale(1.3);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+  
