@@ -1312,7 +1312,7 @@ body {
   }
   
   .card {
-    background: #f0ead6;
+    background: #000000;
     position: relative;
     transition: all 1s;
     height: 270px;
@@ -1326,14 +1326,14 @@ body {
     background-size: 200% 120%;
   }
   
-  .card2 {
-    background-image: url("https://assets.codepen.io/489403/belize.jpg");
+.card2 {
+    background-image: url("../img/pexels-iriser-1366957.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
+    background-size: 140% 100%;
+}
   
   .card3 {
-    background-image: url("https://assets.codepen.io/489403/egypt.jpg");
+    background-image: url("../img/carbackground.jpg");
     background-repeat: no-repeat;
     background-size: 140% 100%;
   }
@@ -1365,13 +1365,14 @@ body {
   }
   
   
-  .title {
+.title {
     font-size: 24px;
     text-align: center;
-    font-weight: 700;
+    font-weight: bold;
     transition: all 1s;
     top: 0;
-  }
+    color: rgb(255, 255, 255);
+}
   
   .para {
     bottom: 0;
