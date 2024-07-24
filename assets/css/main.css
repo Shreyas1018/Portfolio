@@ -1312,7 +1312,7 @@ body {
 .card6 {
     background-image: url("../img/emoticons.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 150%;
     background-position: center;
 }
 
