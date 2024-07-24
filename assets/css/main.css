@@ -1298,26 +1298,26 @@ body {
 }
 
 .card4 {
-    background-image: url("https://github.com/Shreyas1018/Portfolio/blob/main/assets/img/FireImg.jpg");
+    background-image: url("../img/FireImg.jpg");
     background-repeat: no-repeat;
     background-size: 120% 100%;
 }
 
 .card5 {
-    background-image: url("https://github.com/Shreyas1018/Portfolio/blob/main/assets/img/News.jpg");
+    background-image: url("../img/News.jpg");
     background-repeat: no-repeat;
     background-size: 120% 100%;
 }
 
 .card6 {
-    background-image: url("https://github.com/Shreyas1018/Portfolio/blob/main/assets/img/emoticons.jpg");
+    background-image: url("../img/emoticons.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 150%;
+    background-size: cover;
     background-position: center;
 }
 
 .card7 {
-    background-image: url("https://github.com/Shreyas1018/Portfolio/blob/main/assets/img/Penguins.jpeg");
+    background-image: url("../img/Penguins.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
